@@ -1,0 +1,56 @@
+# Site settings
+title: Extreme-Airs
+description: "We provide the best quality pumps."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the name of your domain
+logo_url: svg/min/logo.svg
+
+# Hero
+hero:
+    hero_img: hero.jpg
+    hero_title: Extreme-Airs
+    hero_description: We provide the best quality pumps.
+
+# Contact form
+api_token: # Enter API token here
+
+# Contact info
+contact:
+    phone: 932 50 540
+    emergency: 931 53 234
+    email: info@extremeairs.com
+    address: address
+
+# Map
+map:
+    zoom: 17
+    address: Gujarat india
+    address_details: svg/min/logo.svg
+
+# Social settings
+facebook: http://facebook.com
+twitter: http://twitter.com
+instagram: http://instagram.com
+youtube: http://youtube.com
+skype: skype:obaez_design?userinfo
+feed: yes
+
+# Footer
+copyright: © 2015 Extreme-Airs
+
+# Build settings
+markdown: kramdown
+
+exclude: [
+    package.json,
+    Gruntfile.js,
+    node_modules,
+    .sass-cache,
+    Gemfile,
+    Gemfile.lock,
+    .gitignore
+]
+
+# Theme Settings
+analytics:
+google_verification:
