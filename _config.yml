@@ -12,13 +12,13 @@ hero:
     hero_description: We provide the best quality pumps.
 
 # Contact form
-api_token: # Enter API token here
+api_token: "c84e8962aca6a783d445b8a81ebf3876" # Enter API token here
 
 # Contact info
 contact:
     phone: 932 50 540
     emergency: 931 53 234
-    email: info@extremeairs.com
+    email: info@extremeairs.in
     address: address
 
 # Map
