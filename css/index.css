@@ -26,3 +26,12 @@
     opacity: 1;
     z-index: 5;
     }
+
+#team .section-title {
+   margin-top: 20px;
+   margin: 20px;
+}
+
+.span3 {
+  margin: 20px;
+}
