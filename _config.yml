@@ -3,7 +3,7 @@ title: Extreme-Airs
 description: "We provide the best quality pumps."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the name of your domain
-logo_url: svg/min/logo.svg
+logo_url: img/logo.jpg
 
 # Hero
 hero:
