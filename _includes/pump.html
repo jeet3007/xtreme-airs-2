@@ -1,7 +1,9 @@
 <div class="expandable-box">
-    <div class="expandable-box-top">
-        <a href="#myModal-{{pump.id}}" data-toggle="modal"><img src="{{ site.baseurl }}/img/{{ pump.image }}" alt="{{ pump.name }}"></a>
-        <h4>{{ pump.name }}</h4>
+    <div class="expandable-box-top panel panel-default">
+    	<div class="panel-body">
+        	<a href="#myModal-{{pump.id}}" data-toggle="modal" data-type="image" data-toggle="lightbox" class="zoom"><img src="{{ site.baseurl }}/img/{{ pump.image }}" alt="{{ pump.name }}"></a>
+        	<h4>{{ pump.name }}</h4>
+        </div>
     </div>
     <div class="expandable-box-bottom">
         <span data-toggle="tooltip" data-placement="bottom" title="{{ member.url }}"><svg class="icon icon-cheveron-right"><use xlink:href="#icon-cheveron-right"></use></svg></span>
