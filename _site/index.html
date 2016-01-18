@@ -58,27 +58,21 @@
     <![endif]-->
 
     <style type="text/css">
-.logo {
-    left:30px;
-    height: 150px;
-    width: 200px;
-}
+    .navbar {
+        z-index: 10;
+    }
 </style>
 <!-- Start Header -->
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
 
-        <!--<div class="navbar-header">
-            <div class="container logo">-->
-        </div>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand scroll" href="#top"><img src="img/logo.jpg" class="logo" alt="Extreme-Airs"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -99,22 +93,30 @@
 
         <link rel="stylesheet" type="text/css" href="css/img.css">
 <script type="text/javascript">
-	$(document).ready(function() {              
-    $('i.glyphicon-thumbs-up, i.glyphicon-thumbs-down').click(function(){    
-        var $this = $(this),
-        c = $this.data('count');    
-        if (!c) c = 0;
-        c++;
-        $this.data('count',c);
-        $('#'+this.id+'-bs3').html(c);
-    });      
+	$(document).ready(function() {               
     $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
         event.preventDefault();
         $(this).ekkoLightbox();
-    });                                        
+    });      
+                                 
 }); 
-</script>
+function getText(name)
+  {  
+  	$('html, body').animate({ scrollTop: $('#cntct').offset().top }, 'slow');
+    document.getElementById("myTextarea").value=name;
 
+    }  
+</script>
+<style type="text/css">
+	#logo1 {
+		position: absolute;
+		top: -60px;
+		left: 50px;
+		height: 120px;
+		width: 120px;
+		z-index: 99;
+	}
+</style>
 
 <div class="hero" style="background: url('/img/hero.jpg') no-repeat; background-size: cover;">
     <div class="hero-content">
@@ -125,6 +127,7 @@
             </div>
         </div>
     </div>
+<!-- scroll button -->
 <div id="square" class="scrollspy">
     <a href="#cntct">
         <div class="boxed-icon">
@@ -132,6 +135,13 @@
         </div>
     </a>
 </div>
+<!-- logo -->
+<div id="logo1">
+	<a href="#top">
+		<img src="img/logo.jpg" alt="Extreme-Airs">
+	</a>
+</div>
+
     <div class="container-fluid">
 
         <div class="col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-8 form" id="cntct">
@@ -147,7 +157,7 @@
                     <input name="email" type="email" placeholder="Email" required>
                 </div>
                 <div class="form-field">
-                    <textarea name="comments" placeholder="Message" required></textarea>
+                    <textarea name="comments" id="myTextarea" placeholder="Message" required></textarea>
                 </div>
                 <input type="submit" class="btn btn-default" value="Send">
             </form>
@@ -206,51 +216,69 @@
     <h2 class="section-title">All products</h2>
     <div id="team-carousel">
     
-        <div class="expandable-box">
-    <div class="expandable-box-top panel panel-default">
+        <style type="text/css">
+    #car_trending {
+        max-height: 400px;
+    }
+</style>
+
+<div class="expandable-box" >
+    <div class="expandable-box-top panel panel-default" id="car_trending">
     	<div class="panel-body">
         	<a href="#myModal-1" data-toggle="modal" data-type="image" data-toggle="lightbox" class="zoom"><img src="/img/Cement Feeding.jpg" alt="Cement feeding system"></a>
         	<h4>Cement feeding system</h4>
         </div>
     </div>
-    <div class="expandable-box-bottom">
+    <!--<div class="expandable-box-bottom">
         <span data-toggle="tooltip" data-placement="bottom" title=""><svg class="icon icon-cheveron-right"><use xlink:href="#icon-cheveron-right"></use></svg></span>
         <span data-toggle="tooltip" data-placement="bottom" title=""><svg class="icon icon-phone"><use xlink:href="#icon -phone"></use></svg></span>
-    </div>
+    </div>-->
 </div> 
 
 
 
 
     
-        <div class="expandable-box">
-    <div class="expandable-box-top panel panel-default">
+        <style type="text/css">
+    #car_trending {
+        max-height: 400px;
+    }
+</style>
+
+<div class="expandable-box" >
+    <div class="expandable-box-top panel panel-default" id="car_trending">
     	<div class="panel-body">
         	<a href="#myModal-2" data-toggle="modal" data-type="image" data-toggle="lightbox" class="zoom"><img src="/img/Roots Blower1.jpg" alt="Roots Blower"></a>
         	<h4>Roots Blower</h4>
         </div>
     </div>
-    <div class="expandable-box-bottom">
+    <!--<div class="expandable-box-bottom">
         <span data-toggle="tooltip" data-placement="bottom" title=""><svg class="icon icon-cheveron-right"><use xlink:href="#icon-cheveron-right"></use></svg></span>
         <span data-toggle="tooltip" data-placement="bottom" title=""><svg class="icon icon-phone"><use xlink:href="#icon -phone"></use></svg></span>
-    </div>
+    </div>-->
 </div> 
 
 
 
 
     
-        <div class="expandable-box">
-    <div class="expandable-box-top panel panel-default">
+        <style type="text/css">
+    #car_trending {
+        max-height: 400px;
+    }
+</style>
+
+<div class="expandable-box" >
+    <div class="expandable-box-top panel panel-default" id="car_trending">
     	<div class="panel-body">
         	<a href="#myModal-3" data-toggle="modal" data-type="image" data-toggle="lightbox" class="zoom"><img src="/img/Vacuum Pump.jpg" alt="Vacuum Pump"></a>
         	<h4>Vacuum Pump</h4>
         </div>
     </div>
-    <div class="expandable-box-bottom">
+    <!--<div class="expandable-box-bottom">
         <span data-toggle="tooltip" data-placement="bottom" title=""><svg class="icon icon-cheveron-right"><use xlink:href="#icon-cheveron-right"></use></svg></span>
         <span data-toggle="tooltip" data-placement="bottom" title=""><svg class="icon icon-phone"><use xlink:href="#icon -phone"></use></svg></span>
-    </div>
+    </div>-->
 </div> 
 
 
@@ -308,6 +336,7 @@ re
 </p>
       </div>
       <div class="modal-footer">
+        <button type="button" id="mybutton-1" class="btn btn-default" data-dismiss="modal" name="Cement feeding system" onclick="getText(this.name)" >Enquire</button>
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
@@ -369,6 +398,7 @@ Dewatering and many more.
 </p>
       </div>
       <div class="modal-footer">
+        <button type="button" id="mybutton-2" class="btn btn-default" data-dismiss="modal" name="Roots Blower" onclick="getText(this.name)" >Enquire</button>
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
@@ -430,6 +460,7 @@ Chemical & Pharmaceutical Industry
 </p>
       </div>
       <div class="modal-footer">
+        <button type="button" id="mybutton-3" class="btn btn-default" data-dismiss="modal" name="Vacuum Pump" onclick="getText(this.name)" >Enquire</button>
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
@@ -537,7 +568,7 @@ Chemical & Pharmaceutical Industry
     </div>
 </div>
 <div id="location" class="map">
-	<div style="width: 100%"><iframe width="100%" height="600" src="http://www.maps.ie/create-google-map/map.php?width=100%&amp;height=600&amp;hl=en&amp;q=C-63%2C%20Shiv%20Industrial%20Park%2C%20Nr.%20Sarjan%20Ind.%2C%20Ambica%20Tube%20Compound%2C%20Vatva%2C%20Ahmedabad%20%E2%80%93%20382440%2C%20Gujarat%2C%20India.+(Extreme%20Air)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="http://www.maps.ie/create-google-map/">Embed Google Map</a> by <a href="http://www.maps.ie/">Maps.ie</a></iframe></div><br />
+	<div style="width: 100%"><iframe width="100%" height="450" src="http://www.maps.ie/create-google-map/map.php?width=100%&amp;height=600&amp;hl=en&amp;q=C-63%2C%20Shiv%20Industrial%20Park%2C%20Nr.%20Sarjan%20Ind.%2C%20Ambica%20Tube%20Compound%2C%20Vatva%2C%20Ahmedabad%20%E2%80%93%20382440%2C%20Gujarat%2C%20India.+(Extreme%20Air)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="http://www.maps.ie/create-google-map/">Embed Google Map</a> by <a href="http://www.maps.ie/">Maps.ie</a></iframe></div><br />
 </div>
 <!-- End Map -->
 <div id="team" class="team">
